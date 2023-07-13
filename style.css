@@ -1,0 +1,71 @@
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@500;700;800&display=swap');
+
+:root {
+	/* font-family */
+	--hanken: 'Hanken Grotesk', sans-serif;
+
+	/* colors */
+	--lightred: hsl(0, 100%, 67%);
+	--orangey-yellow: hsl(39, 100%, 56%);
+	--greenteal: hsl(166, 100%, 37%);
+	--cobaltblue: hsl(234, 85%, 45%);
+	--link: hsl(228deg, 45%, 44%);
+
+	/* gradients(background) */
+	--lightslateblue: hsl(252, 100%, 67%);
+	--lightroyalblue: hsl(241, 81%, 54%);
+	/* gradients(circle) */
+	--violetblue: hsla(256, 72%, 46%, 1);
+	--persianblue: hsla(241, 72%, 46%, 0);
+
+	/* neutralcolors */
+	--white: hsl(0, 0%, 100%);
+	--paleblue: hsl(221, 100%, 96%);
+	--lightlavender: hsl(241, 100%, 89%);
+	--darkgrayblue: hsl(224, 30%, 27%);
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: var(--hanken);
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+	min-height: 100vh;
+}
+
+main {
+	margin: 0 auto;
+	width: 50%;
+	display: flex;
+	justify-content: space-between;
+	flex-direction: row;
+	background-color: var(--white);
+}
+
+#total-summary {
+	display: flex;
+	flex-basis: 50%;
+	flex-direction: column;
+	background-image: linear-gradient(
+		var(--lightslateblue),
+		var(--lightroyalblue)
+	);
+	text-align: center;
+	justify-content: center;
+}
+
+#summary {
+	flex-basis: 50%;
+	padding: 3%;
+}
+
+.attribution {
+	text-align: center;
+}
