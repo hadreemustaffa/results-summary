@@ -7,49 +7,41 @@
   <!-- displays site properly based on user's device -->
 
   <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
   <link rel="stylesheet" href="style.css">
 
   <title>Frontend Mentor | Results Summary Component</title>
+
+  <script type="module" src="app.js"></script>
 
 </head>
 
 <body>
 
   <main>
-    <section id="total-summary">
-      Your Result
-      <p id="average"></p>
-      of 100
+    <section id="total">
 
-      Great
-      You scored higher than 65% of the people who have taken these tests.
+      <h2 id="title">Your Result</h2>
+
+      <div id="circle">
+        <p id="total-avg">
+        </p>
+        <p id="limit">of 100</p>
+      </div>
+
+
+      <h1 id="subtitle">Great</h1>
+
+      <p id="description">You scored higher than 65% of the people who have taken these tests.</p>
     </section>
 
     <section id="summary">
+      <h2 id="title">Summary</h2>
 
-      <p>Summary</p>
+      <ul id="categories">
+      </ul>
 
-      <div id="reaction">
-        <p></p>
-        <p class="score"></p>/ 100
-      </div>
-
-      <div id="memory">
-        <p></p>
-        <p class="score"></p> / 100
-      </div>
-
-      <div id="verbal">
-        <p></p>
-        <p class="score"></p> / 100
-      </div>
-
-      <div id="visual">
-        <p></p>
-        <p class="score"></p> / 100
-      </div>
-
-      <button id="continue">
+      <button id="btn" type="submit" value="Continue">
         Continue
       </button>
 
@@ -60,6 +52,7 @@
     Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
     Coded by <a href="#">Hadree Mustaffa</a>.
   </div>
+
 </body>
 
 </html>
