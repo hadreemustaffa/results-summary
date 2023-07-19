@@ -1,7 +1,6 @@
 fetch('./data.json')
 	.then((res) => res.json())
 	.then((data) => {
-		console.log(data);
 		let avg = 0;
 		for (let i = 0; i < data.length; i++) {
 			// calculate total average score and round off
@@ -14,10 +13,10 @@ fetch('./data.json')
 				.map(
 					(data) =>
 						`<li class='category' id='${data.category}'> 
-					<img class='icon' src=${data.icon}> 
-					<p>${data.category}</p>
-					<p class='score'>${data.score} <span class='max'> / 100</span></p>
-					</li>`
+						 <img class='icon' src=${data.icon}> 
+						 <p>${data.category}</p>
+						 <p class='score'>${data.score} <span class='max'> / 100</span></p>
+						 </li>`
 				)
 				.join('')}`;
 		}

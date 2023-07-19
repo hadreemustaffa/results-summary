@@ -43,7 +43,7 @@ h1 {
 	font-size: 32px;
 }
 h2 {
-	font-size: 26px;
+	font-size: 24px;
 }
 p {
 	font-size: 18px;
@@ -51,13 +51,16 @@ p {
 
 main {
 	margin: 0 auto;
-	width: 40vw;
+	width: 54vw;
+	min-width: 605px;
 	display: flex;
 	flex-direction: row;
 	background-color: var(--white);
 }
 
 #total {
+	position: relative;
+	left: 2.37%;
 	display: flex;
 	flex-direction: column;
 	height: 100%;
@@ -86,7 +89,7 @@ main {
 	flex-direction: column;
 	justify-content: center;
 	align-self: center;
-	background-image: linear-gradient(var(--violetblue), var(--persianblue));
+	background-image: linear-gradient(var(--violetblue), 70%, var(--persianblue));
 	height: 175px;
 	width: 175px;
 	padding: 10%;
@@ -106,12 +109,12 @@ main {
 
 #summary {
 	position: relative;
-	right: 4.75%;
+	right: 2.37%;
 	background-color: var(--white);
 	display: flex;
 	flex-direction: column;
 	flex-basis: 50%;
-	justify-content: space-between;
+	justify-content: space-around;
 	padding: 5%;
 	padding-left: 10%;
 	border-radius: 0 30px 30px 0;
@@ -145,26 +148,23 @@ main {
 	color: hsla(224, 30%, 27%, 0.6);
 }
 
+/* category ids */
 #Reaction {
 	background-color: hsla(0, 100%, 67%, 0.1);
 	color: var(--lightred);
 }
-
 #Memory {
 	background-color: hsla(39, 100%, 56%, 0.1);
 	color: var(--orangey-yellow);
 }
-
 #Verbal {
 	background-color: hsla(166, 100%, 37%, 0.1);
 	color: var(--greenteal);
 }
-
 #Visual {
 	background-color: hsla(234, 85%, 45%, 0.1);
 	color: var(--cobaltblue);
 }
-
 #btn {
 	font-weight: bold;
 	padding: 20px;
@@ -173,7 +173,6 @@ main {
 	color: white;
 	border: none;
 }
-
 #btn:hover {
 	background-image: linear-gradient(
 		var(--lightslateblue),
@@ -185,4 +184,57 @@ main {
 .attribution {
 	margin-top: 2%;
 	text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+	h1 {
+		font-size: 28px;
+	}
+
+	h2 {
+		font-size: 20px;
+	}
+
+	body {
+		justify-content: flex-start;
+	}
+
+	main {
+		margin: 0;
+		width: 100vw;
+		height: 100vh;
+		min-width: 315px;
+		max-width: 375px;
+		min-height: 835px;
+		max-height: 850px;
+		flex-direction: column;
+	}
+
+	#total {
+		flex-basis: 30%;
+		left: 0;
+		border-radius: 0 0 30px 30px;
+		padding-top: 5%;
+		padding-bottom: 10%;
+	}
+
+	#total #title {
+		padding-bottom: 5%;
+	}
+	#subtitle {
+		padding-top: 8%;
+		padding-bottom: 3%;
+	}
+
+	#summary {
+		flex-basis: 70%;
+		right: 0;
+		height: 100vh;
+		padding: 5% 8%;
+		box-shadow: none;
+	}
+
+	.attribution {
+		display: none;
+	}
 }
