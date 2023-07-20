@@ -40,13 +40,13 @@ body {
 }
 
 h1 {
-	font-size: 32px;
+	font-size: 2rem;
 }
 h2 {
-	font-size: 24px;
+	font-size: 1.5rem;
 }
 p {
-	font-size: 18px;
+	font-size: 1.125rem;
 }
 
 main {
@@ -114,7 +114,7 @@ main {
 	display: flex;
 	flex-direction: column;
 	flex-basis: 50%;
-	justify-content: space-around;
+	justify-content: space-between;
 	padding: 5%;
 	padding-left: 10%;
 	border-radius: 0 30px 30px 0;
@@ -190,7 +190,6 @@ main {
 	h1 {
 		font-size: 28px;
 	}
-
 	h2 {
 		font-size: 20px;
 	}
@@ -200,13 +199,10 @@ main {
 	}
 
 	main {
-		margin: 0;
 		width: 100vw;
 		height: 100vh;
 		min-width: 315px;
-		max-width: 375px;
-		min-height: 835px;
-		max-height: 850px;
+		max-width: 480px;
 		flex-direction: column;
 	}
 
@@ -227,11 +223,19 @@ main {
 	}
 
 	#summary {
+		justify-content: flex-start;
 		flex-basis: 70%;
 		right: 0;
-		height: 100vh;
 		padding: 5% 8%;
 		box-shadow: none;
+	}
+
+	#summary #title {
+		padding-bottom: 6.275%;
+	}
+
+	#categories {
+		padding-bottom: 6.275%;
 	}
 
 	.attribution {
