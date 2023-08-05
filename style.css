@@ -56,6 +56,7 @@ main {
 	width: 54vw;
 	min-width: 605px;
 	max-width: 1400px;
+	min-height: 520px;
 	display: flex;
 	flex-direction: row;
 	background-color: var(--white);
@@ -66,7 +67,6 @@ main {
 	left: 2.37%;
 	display: flex;
 	flex-direction: column;
-	height: 100%;
 	flex-basis: 50%;
 	padding: 8%;
 	padding-top: 5%;
@@ -77,13 +77,13 @@ main {
 	z-index: 1;
 }
 
-#title,
+.title,
 #description,
 #limit {
 	color: hsla(0, 0%, 100%, 0.75);
 }
 
-#total #title {
+#total .title {
 	padding-bottom: 10%;
 }
 
@@ -119,13 +119,14 @@ main {
 	flex-basis: 50%;
 	justify-content: space-between;
 	padding: 5%;
+	padding-bottom: 62.2px;
 	padding-left: 10%;
 	border-radius: 0 30px 30px 0;
 	box-shadow: 2px 18px 60px -35px hsla(241, 81%, 54%, 0.5);
 	z-index: 0;
 }
 
-#summary #title {
+#summary .title {
 	color: var(--darkgrayblue);
 }
 
@@ -217,7 +218,7 @@ main {
 		padding-bottom: 10%;
 	}
 
-	#total #title {
+	#total .title {
 		padding-bottom: 5%;
 	}
 	#subtitle {
@@ -233,7 +234,7 @@ main {
 		box-shadow: none;
 	}
 
-	#summary #title {
+	#summary .title {
 		padding-bottom: 6.275%;
 	}
 
