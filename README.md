@@ -22,7 +22,7 @@ Users should be able to:
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
+- Solution URL: [Frontend Mentor](https://www.frontendmentor.io/solutions/results-summary-component-using-flexbox-and-grid-dVpbfzYJyq)
 - Live Site URL: [Github Pages](https://hadreemustaffa.github.io/results-summary/)
 
 ## My process
