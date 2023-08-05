@@ -13,7 +13,7 @@ fetch('./data.json')
 				.map(
 					(data) =>
 						`<li class='category' id='${data.category}'> 
-						 <img class='icon' src=${data.icon}> 
+						 <img class='icon' alt='icon of ${data.description}' src=${data.icon} > 
 						 <p>${data.category}</p>
 						 <p class='score'>${data.score} <span class='max'> / 100</span></p>
 						 </li>`
